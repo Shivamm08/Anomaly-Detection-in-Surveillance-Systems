@@ -1,0 +1,44 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violence Detection Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-height: 80vh; /* Set a maximum height for the container */
+            overflow-y: auto; /* Enable vertical scrolling */
+            margin-top: 20px; /* Add margin at the top */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1>Real Time Failed</h1>
+
+    <div class="container">
+        <p>Webcam Not Connected</p>
+    </div>
+    <a  class="btn button" href="/">
+        Go Back
+    </a>
+</body>
+</html>

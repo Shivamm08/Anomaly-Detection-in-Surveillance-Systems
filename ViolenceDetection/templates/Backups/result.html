@@ -1,0 +1,59 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violence Detection Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-height: 80vh; /* Set a maximum height for the container */
+            overflow-y: auto; /* Enable vertical scrolling */
+            margin-top: 20px; /* Add margin at the top */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        .entry {
+            margin-bottom: 20px; /* Add margin between entries */
+            border-bottom: 1px solid #ccc; /* Add a border between entries */
+            padding-bottom: 10px; /* Add padding at the bottom of each entry */
+        }
+    </style>
+</head>
+<body>
+    <h1>Violence Detection Results</h1>
+
+    <div class="container">
+        {% if result %}
+            {% for entry in result %}
+                <div class="entry">
+                    <img src="{{ entry.image.url }}" alt="Violence Frame" width="300">
+                    <p>Confidence: {{ entry.confidence }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No violence detected.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

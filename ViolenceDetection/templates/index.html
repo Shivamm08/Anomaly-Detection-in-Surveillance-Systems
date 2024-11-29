@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %} Smart Surveillance System {% endblock title %}
+
+{% block body %}
+    <div class="container-fluid p-0">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-12 p-0">
+                <img src="https://source.unsplash.com/1600x400/?cctv" alt="Surveillance Image" class="img-fluid" style="object-fit: cover;">
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="d-grid gap-3">
+                    <a id="upload-btn" class="btn btn-success btn-lg rounded-0" href="/upload"> <!-- Changed color to success and added rounded-0 for square shape -->
+                        Upload Video
+                    </a>
+                    <a id="monitoring-btn" class="btn btn-success btn-lg rounded-0" href="/realtime"> <!-- Changed color to success and added rounded-0 for square shape -->
+                        Real-time Monitoring
+                    </a>
+                    <a id="monitoring-btn" class="btn btn-success btn-lg rounded-0" href="/admin"> <!-- Changed color to success and added rounded-0 for square shape -->
+                        DataBase
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+
