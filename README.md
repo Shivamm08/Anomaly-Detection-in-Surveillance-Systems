@@ -66,8 +66,53 @@ Follow these steps to set up the project on your local machine:
 ### 1) Cloning the Repository
 
 ```bash
-git clone https://github.com/<username>/AnomalyDetection.git
+git clone https://github.com/Shivamm08/Anomaly-Detection-in-Surveillance-Systems.git
 cd AnomalyDetection
 ```
 
-### 2) 
+### 2) Setting Up a Virtual Environment
+
+Create and activate a virtual environment to manage dependencies:
+
+```bash
+# Create a virtual environment
+python -m venv venv
+
+# Activate the virtual environment
+# For Windows:
+venv\Scripts\activate
+# For macOS/Linux:
+source venv/bin/activate
+```
+
+### 3) Installing Dependencies
+
+Install the required packages listed in the requirements.txt file:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4) Model Directory
+
+You can either train the model yourself or use the pretrained model provided. Make sure to mention the directory of the model in the views.py file present in the ViolenceDetection/home/ folder.
+
+### 5) Database Setup
+
+Run the following commands to set up the Django database:
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### 6) Running the Django Server
+
+Start the Django development server to launch the web application:
+
+```bash
+python manage.py runserver
+```
+
+Access the application in your web browser at: http://127.0.0.1:8000/
+
