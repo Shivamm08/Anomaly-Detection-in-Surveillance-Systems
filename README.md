@@ -57,7 +57,7 @@ The dataset used for training consists of labeled violence and non-violence vide
 
 ## 3. Dataset
 
-The dataset used for this project is the Real Life Violence Dataset, available on Kaggle. This dataset consists of videos categorized into two classes: Violence and Non-Violence. The dataset can be downloaded directly from its Kaggle page or alternatively, you can download the dataset from the provided Google Drive link: https://drive.google.com/drive/folders/15N7TJlp9m17Mn_9ghSTRJxzvvHZUhQQK?usp=sharing
+The dataset used for this project is the Real Life Violence Dataset, available on Kaggle. This dataset consists of videos categorized into two classes: Violence and Non-Violence. The dataset can be downloaded directly from its Kaggle page or alternatively, you can download the dataset from the provided Google Drive link: https://drive.google.com/drive/folders/1ay-8n-tisLSaL4mW4Nc74kExNWZ1ogNO?usp=sharing
 
 ## 4. Installation Guide
 
