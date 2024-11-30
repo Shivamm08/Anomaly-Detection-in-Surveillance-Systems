@@ -9,6 +9,7 @@ The system also includes a Django-based web interface, which provides an intuiti
 This project demonstrates the practical application of deep learning in surveillance systems, offering an automated approach to anomaly detection with the potential to enhance public safety and security monitoring systems.
 
 ## 1. Django Webpage and Features
+
 The Django-based web application acts as the core interface for the Violence Detection System. It integrates seamlessly with the machine learning model to offer features like video upload analysis, real-time monitoring, and database management. Design ensures that users can efficiently detect and analyze anomalies in surveillance footage.
 
 ### 1) User Interface
@@ -38,6 +39,7 @@ The system is equipped with a database to store analyzed video data. Each detect
 <img src="assets/Django_Database.png" alt="Django_Database.png" width="700">
 
 ## 2. Violence Detection Model
+
 The violence detection model employs a MobileNetV2 Convolutional Neural Network (CNN) as the backbone for feature extraction, followed by a Bi-LSTM (Bidirectional Long Short-Term Memory) network for analyzing temporal sequences of frames in a video. This architecture effectively combines spatial and temporal feature learning to detect violent incidents accurately.
 
 MobileNetV2 is fine-tuned for this task by unfreezing the last 40 layers, enabling the model to adapt to the specific features of violence-related scenes. The Bi-LSTM further enhances the detection by capturing the context between consecutive frames, making the system robust for real-world video streams.
@@ -52,3 +54,20 @@ The dataset used for training consists of labeled violence and non-violence vide
 
 ### 3) Confusion Matrix
 <img src="assets/Confusion_Matrix.png" alt="Confusion_Matrix.png" width="700">
+
+## 3. Dataset
+
+The dataset used for this project is the Real Life Violence Dataset, available on Kaggle. This dataset consists of videos categorized into two classes: Violence and Non-Violence. The dataset can be downloaded directly from its Kaggle page or alternatively, you can download the dataset from the provided Google Drive link: https://drive.google.com/drive/folders/15N7TJlp9m17Mn_9ghSTRJxzvvHZUhQQK?usp=sharing
+
+## 4. Installation Guide
+
+Follow these steps to set up the project on your local machine:
+
+### 1) Cloning the Repository
+
+```bash
+git clone https://github.com/<username>/AnomalyDetection.git
+cd AnomalyDetection
+```
+
+### 2) 
