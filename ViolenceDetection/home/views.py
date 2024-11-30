@@ -14,7 +14,7 @@ from django.conf import settings
 from home.models import ViolenceImage
 
 # Load the pre-trained model
-MoBiLSTM_model = load_model(r"E:\Study stuff\College\8th Sem 2024\CAPSTONE\Project\Project\CapstoneProject\Files\Another Model\model.keras")
+MoBiLSTM_model = load_model(r"E:\Study stuff\College\Capstone Project\model.h5")
 # Constants
 CLASSES_LIST = ["NonViolence", "Violence"]
 SEQUENCE_LENGTH = 16  
